@@ -1,0 +1,117 @@
+@charset "utf-8";
+/* CSS document */
+
+body {
+    font-family: 'PT Sans', sans-serif; /* google font */
+    background-color: #ccff99; /* ou alors #dea */
+    /* color:#333; */
+    margin: 10px 0;
+    padding: 0;
+    text-align: center;
+}
+
+#conteneur {
+    width: 770px; /* largeur en px de l'id conteneur */
+    margin: 0 auto; /* marge automatique qui centre la div après l'avoir remontée le plus haut possible dans l'affichage */
+    border: 2px solid #ab4;/*bordure extérieure*/
+    background: #fff;
+    text-align: left;
+}
+
+/* pour le h1 avec l'id header */
+#header {
+    height: 250px;
+    background: url('../img/apple.jpg') no-repeat left top ;
+    margin: 0;
+}
+/* la propriété display et la valeur block transforment le lien a inline en élément de type block on peut donc lui attribuer des propriétés de taille ; on positionne l'image de fond qui a les mêmes dimensions que le cadre ainsi créé */
+#header a {
+    width: 400px;
+    height: 70px;
+    display: block;
+    background: url('../img/title.gif') no-repeat;
+    position: relative;
+    left: 350px;
+    top: 15px;
+    /* le text-indent négatif est fait pour cacher le texte au visiteur (il est hors de la page) mais il est lu par les moteurs de recherche */
+    text-indent: -5000px;
+}
+/* pour la navigation */
+/* la ul  */
+ul {
+    height: 35px;
+    margin: 0;
+    padding: 0;
+    /* un petit décalage de -25px vers le haut */
+    background: url('../img/bg_menu.gif') repeat-x 0 -25px;
+    list-style-type: none; 
+}
+
+/* le list item de la ul */
+/* on rend les li flottant pour les afficher horizontalement */
+ul li {
+    float: left;
+    text-align: center;
+}
+
+ul li a {
+    width: 130px; /* la largeur de l'élément a inline ... */
+    display: block; /* ... et en changeant la propriété des a en block on peut les dimensionner */
+    line-height: 25px; /* hauteur de la ligne */
+    font-size: 1.2em; /* taille du texte */
+    font-weight: bold;
+    letter-spacing: 2px; /* espacement entre les lettres */
+    color: #fff;
+    text-decoration: none;
+    border-right: 2px solid #ccff99;
+}
+
+ul li a:hover {
+    background: url('../img/bg_menu.gif') repeat-x 0 0; /* on décale l'image de fond vers le bas au passage de la souris */
+}
+
+/* le contenu principal */
+#contenu {
+    padding: 0 30px 0 100px;
+    background-image: url('../img/bg_page.gif');
+    background-repeat: no-repeat;
+    background-position: 15px 15px; /* on créé un espace à gauche et à droite de l'image */
+}
+
+#contenu h2 {
+    border-bottom: 1px solid #9b2; /* filet bas sous le h2 */
+    color: #9b2;
+    font-size: 1.4em;
+    line-height: 25px;
+    padding-left: 25px;
+    background: url('../img/little_apple.gif') no-repeat left bottom;
+}
+
+#contenu h3 {
+    margin-left: 15px;
+    padding-left: 5px;
+    border-bottom: 1px solid #9b2;
+    border-left: 1px solid #9b2;
+    color: #9b2;
+}
+#contenu p {
+    line-height: 1.7em;
+    text-align: justify;
+    text-indent: 2em;
+}
+blockquote {
+    
+    border-left: 5px solid #9b2;
+    padding-left: 10px;
+}
+
+footer {
+    background: #ab4;
+}
+footer p {
+    margin: 0;
+    padding: 10px;
+    line-height: 20px;
+    text-align: left;
+    color: #fff;
+}
